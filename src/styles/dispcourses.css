@@ -1,0 +1,15 @@
+.coursesContainer {
+  height: 300px;
+  overflow-y: auto;
+}
+
+.boxWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boxItem {
+  width: calc(50% - 10px);
+  padding: 5px;
+  box-sizing: border-box;
+}

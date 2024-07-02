@@ -1,0 +1,1424 @@
+[
+  {
+    "Course Code": "First Year(2024)"
+  },
+  {
+    "Course Code": "FP 100",
+    "Course Name": "Foundation Programme"
+  },
+  {
+    "Course Code": "ES 101",
+    "Course Name": "Engineering Graphics",
+    "Lecture": "A2\n (Jasubhai Auditorium)",
+    "Lab": "N1,N2 (1/101,1/102,7/108,7/109,7/208,7/209,10/104,10/105,10/203,10/204)"
+  },
+  {
+    "Course Code": "ES 112",
+    "Course Name": "Computing",
+    "Lecture": "F1,F2\n (Jasubhai Auditorium)",
+    "Lab": "P1,P2\n (10/104,10/105,10/203,10/204)"
+  },
+  {
+    "Course Code": "ES 115",
+    "Course Name": "Design, Innovation, and Prototyping",
+    "Lecture": "A1\n (Jasubhai Auditorium)",
+    "Lab": "I1,K1,J1,L1,I2,M1,K2,L2,J2,M2\n (1/101)"
+  },
+  {
+    "Course Code": "ES 118",
+    "Course Name": "Materials for the Future",
+    "Lecture": "E2\n (Jasubhai Auditorium)",
+    "Lab": "I1,J1,I2,K2,J2,P2\n (MSE Lab)"
+  },
+  {
+    "Course Code": "HS 191",
+    "Course Name": "Introduction to Writing I",
+    "Lecture": "H2\n(7/101,7/210,7/103,7/104,7/105,7/106,7/110,7/201,7/204,7/205,7/206,7/207,7/102,7/107)",
+    "Lab": "G1,G2\n (7/101,7/210,7/103,7/104,7/105,7/106,7/110,7/201,7/204,7/205,7/206,7/207,7/102,7/107)\nC1,C2\n(7/104,7/105,7/201)"
+  },
+  {
+    "Course Code": "MA 103",
+    "Course Name": "Calculus of Single Variable and Linear Algebra",
+    "Lecture": "B1,B2\n (Jasubhai Auditorium)",
+    "Tutorial": "H1\n(7/101,7/210,7/103,7/104,7/105,7/110,7/201,7/204,7/205,7/206,7/207)"
+  },
+  {
+    "Course Code": "HS 201",
+    "Course Name": "World Civilizations and Cultures",
+    "Lecture": "D1,D2\n (1/101,1/102,10/201)"
+  },
+  {
+    "Course Code": "PE 101",
+    "Course Name": "Physical Education"
+  },
+  {
+    "Course Code": "IN 101",
+    "Course Name": "Comprehensive Viva Voce"
+  },
+  {
+    "Course Code": "Second Year(2023)"
+  },
+  {
+    "Course Code": "ES 243",
+    "Course Name": "Biology for Engineers",
+    "Lecture": "G1,G2\n (Jasubhai Auditorium)",
+    "Tutorial": "H1\n(7/102,7/107,7/202,7/203,10/102,7/108,7/109,7/208,7/209)"
+  },
+  {
+    "Course Code": "GE 201",
+    "Course Name": "General Education II",
+    "Lecture": "P1,P2\n (10/201)"
+  },
+  {
+    "Course Code": "PH 202",
+    "Course Name": "Introduction to Quantum Physics",
+    "Lecture": "B1,B2\n(10/103)",
+    "Tutorial": "K1\n(7/205,7/206,7/207,7/102,7/107,7/202,7/203,7/108)"
+  },
+  {
+    "Course Code": "MA 204",
+    "Course Name": "Introduction to Partial Differential Equations (Second Half)",
+    "Lecture": "C1,C2\n (10/103)",
+    "Tutorial": "M1\n (7/101,7/210,7/103,7/104,7/105,7/106,7/110,7/201)"
+  },
+  {
+    "Course Code": "MA 205",
+    "Course Name": "Calculus of Several Variables (First Half)",
+    "Lecture": "A1,A2\n (10/103)",
+    "Tutorial": "F2\n (7/101,7/210,7/103,7/104,7/105,7/106,7/110,7/201)"
+  },
+  {
+    "Course Code": "MA 206",
+    "Course Name": "Introduction to Complex Analysis (Second Half)",
+    "Lecture": "A1,A2\n (10/103)",
+    "Tutorial": "F2\n (7/101,7/210,7/103,7/104,7/105,7/106,7/110,7/201)"
+  },
+  {
+    "Course Code": "HS 221",
+    "Course Name": "Introduction to Philosophy",
+    "Lecture": "D1,D2\n (Jasubhai Auditorium)"
+  },
+  {
+    "Course Code": "ES 211",
+    "Course Name": "Thermodynamics",
+    "Lecture": "E1,E2\n (1/101)",
+    "Tutorial": "E2\n (7/105,7/203)"
+  },
+  {
+    "Course Code": "MSE 202",
+    "Course Name": "Materials Thermodynamics",
+    "Lecture": "J1,J2\n (7/207)",
+    "Tutorial": "H2\n (7/203)"
+  },
+  {
+    "Course Code": "EE 221",
+    "Course Name": "Electronic Devices",
+    "Lecture": "I1,I2\n (7/208)"
+  },
+  {
+    "Course Code": "CE 201",
+    "Course Name": "Earth Materials and Processes",
+    "Lecture": "B1\n (7/101)",
+    "Lab": "I1,K1\n (7/204)"
+  },
+  {
+    "Course Code": "CL 201",
+    "Course Name": "Chemical Process Calculations",
+    "Lecture": "C1,C2\n (7/102)"
+  },
+  {
+    "Course Code": "ES 242",
+    "Course Name": "Data Structures and Algorithms I",
+    "Lecture": "N1,N2\n (10/103)",
+    "Lab": "H2\n (10/104,10/105,10/203,10/204)"
+  },
+  {
+    "Course Code": "ES 244",
+    "Course Name": "Signals, Systems, and Random Processes",
+    "Lecture": "E1,E2\n (10/202)",
+    "Tutorial": "F1\n (1/102)"
+  },
+  {
+    "Course Code": "ES 221",
+    "Course Name": "Mechanics of Solids",
+    "Lecture": "E1,E2\n (7/101)",
+    "Tutorial": "F1\n (7/101)"
+  },
+  {
+    "Course Code": "ES 214",
+    "Course Name": "Discrete Mathematics",
+    "Lecture": "E1,E2\n (10/201)",
+    "Tutorial": "F1\n (1/101)"
+  },
+  {
+    "Course Code": "CE 203",
+    "Course Name": "Geospatial Engineering",
+    "Lecture": "H2\n (7/202)",
+    "Lab": "J1,L1\n (7/202)"
+  },
+  {
+    "Course Code": "EE 223",
+    "Course Name": "Electrical Machines",
+    "Lecture": "B1,B2\n (10/201)",
+    "Lab": "N1,N2,H2,M2\n (EE Lab)"
+  },
+  {
+    "Course Code": "MSE 207",
+    "Course Name": "Structure of Materials",
+    "Lecture": "E1,E2\n (7/106)",
+    "Tutorial": "F1\n (7/103)"
+  },
+  {
+    "Course Code": "MSE 204",
+    "Course Name": "Transport Phenomena in Materials Engineering",
+    "Lecture": "B1,B2\n (7/210)",
+    "Tutorial": "L2\n (7/101)"
+  },
+  {
+    "Course Code": "ME 206",
+    "Course Name": "Statics & Dynamics",
+    "Lecture": "C1,C2\n (7/208)",
+    "Lab": "J1\n(7/203)"
+  },
+  {
+    "Course Code": "PE 103",
+    "Course Name": "Physical Education"
+  },
+  {
+    "Course Code": "IN 103",
+    "Course Name": "Comprehensive Viva Voce"
+  },
+  {
+    "Course Code": "5th Sem Chemical Engineering"
+  },
+  {
+    "Course Code": "HS 151",
+    "Course Name": "Economics",
+    "Lecture": "C1,C2\n (Jasubhai Auditorium)",
+    "Tutorial": "N1\n (7/204,7/205,7/206,7/207,7/107,7/202,7/203)"
+  },
+  {
+    "Course Code": "BS 192",
+    "Course Name": "Undergraduate Science Laboratory",
+    "Lab": "I1,K1,J1,L1,I2,M1,K2,L2,J2,M2\n (PH Lab)"
+  },
+  {
+    "Course Code": "CL 313",
+    "Course Name": "Chemical Reaction Engineering-II",
+    "Lecture": "E1,E2\n (7/102)"
+  },
+  {
+    "Course Code": "CL 314",
+    "Course Name": "Separation Processes -I",
+    "Lecture": "D1,D2\n (7/203)"
+  },
+  {
+    "Course Code": "CL 315",
+    "Course Name": "Process Dynamics and Control",
+    "Lecture": "F1,F2\n (7/202)"
+  },
+  {
+    "Course Code": "CL 326",
+    "Course Name": "Integrated Chemical Engineering Lab-I",
+    "Lab": "I1,K1,H1\n (CL Lab)"
+  },
+  {
+    "Course Code": "HS XXX",
+    "Course Name": "HSS Elective"
+  },
+  {
+    "Course Code": "IN 105",
+    "Course Name": "Comprehensive Viva Voce"
+  },
+  {
+    "Course Code": "7th Sem Chemical Engineering"
+  },
+  {
+    "Course Code": "CL 425",
+    "Course Name": "Process Synthesis and Design",
+    "Lecture": "E1,E2\n (7/107)",
+    "Tutorial": "F1\n (7/105)"
+  },
+  {
+    "Course Code": "CL 451",
+    "Course Name": "Process Dynamics and Control Lab",
+    "Lab": "J1,L1\n(CL Lab)"
+  },
+  {
+    "Course Code": "HS XXX",
+    "Course Name": "HS Elective"
+  },
+  {
+    "Course Name": "Open Elective"
+  },
+  {
+    "Course Name": "Open Elective"
+  },
+  {
+    "Course Code": "IN 107",
+    "Course Name": "Comprehensive Viva Voce"
+  },
+  {
+    "Course Code": "5th Sem Civil Engineering"
+  },
+  {
+    "Course Code": "HS 151",
+    "Course Name": "Economics",
+    "Lecture": "C1,C2\n (Jasubhai Auditorium)",
+    "Tutorial": "N1\n (7/204,7/205,7/206,7/207,7/107,7/202,7/203)"
+  },
+  {
+    "Course Code": "BS 192",
+    "Course Name": "Undergraduate Science Laboratory",
+    "Lab": "I1,K1,J1,L1,I2,M1,K2,L2,J2,M2\n (PH Lab)"
+  },
+  {
+    "Course Code": "CE 301",
+    "Course Name": "Soil Mechanics",
+    "Lecture": "E1,E2\n (7/210)",
+    "Tutorial": "H1\n (7/106)",
+    "Lab": "I1,K1\n (CE Lab)"
+  },
+  {
+    "Course Code": "CE 312",
+    "Course Name": "Design of Steel Structures",
+    "Lecture": "F1,F2\n (7/204)",
+    "Tutorial": "G1\n (7/202)"
+  },
+  {
+    "Course Code": "CE 308",
+    "Course Name": "Water Resource Engineering",
+    "Lecture": "A1,A2\n (7/101)",
+    "Lab": "K2,L2\n(7/204)"
+  },
+  {
+    "Course Code": "CE 404",
+    "Course Name": "Transportation Engineering",
+    "Lecture": "D1,D2\n (7/108)"
+  },
+  {
+    "Course Code": "HS XXX",
+    "Course Name": "HSS Elective"
+  },
+  {
+    "Course Code": "IN 107",
+    "Course Name": "Comprehensive Viva Voce"
+  },
+  {
+    "Course Name": "Open Project Course"
+  },
+  {
+    "Course Code": "7th Sem Civil Engineering"
+  },
+  {
+    "Course Code": "HS XXX",
+    "Course Name": "HSS Elective"
+  },
+  {
+    "Course Name": "BS Elective"
+  },
+  {
+    "Course Name": "Open Elective"
+  },
+  {
+    "Course Code": "IN 107",
+    "Course Name": "Comprehensive Viva Voce"
+  },
+  {
+    "Course Code": "5th Sem Computer Science and Engineering"
+  },
+  {
+    "Course Code": "HS 151",
+    "Course Name": "Economics",
+    "Lecture": "C1,C2\n (Jasubhai Auditorium)",
+    "Tutorial": "N1\n (7/204,7/205,7/206,7/207,7/107,7/202,7/203)"
+  },
+  {
+    "Course Code": "BS 192",
+    "Course Name": "Undergraduate Science Laboratory",
+    "Lab": "I1,K1,J1,L1,I2,M1,K2,L2,J2,M2\n (PH Lab)"
+  },
+  {
+    "Course Code": "CS 202",
+    "Course Name": "Software Tools & Techniques",
+    "Lecture": "E1\n (7/108)",
+    "Lab": "I1,K1\n(10/104,10/105)"
+  },
+  {
+    "Course Code": "ES 215",
+    "Course Name": "Computer Organization and Architecture",
+    "Lecture": "B1,B2\n (7/108)",
+    "Tutorial": "H1\n (1/101)"
+  },
+  {
+    "Course Code": "CS 329",
+    "Course Name": "Foundations of AI: Multiagent Systems",
+    "Lecture": "F1,F2\n (10/201)"
+  },
+  {
+    "Course Code": "HS 3XX",
+    "Course Name": "HSS Elective"
+  },
+  {
+    "Course Name": "Open Project Course"
+  },
+  {
+    "Course Code": "IN 105",
+    "Course Name": "Comprehensive Viva Voce"
+  },
+  {
+    "Course Code": "7th Sem Computer Science and Engineering"
+  },
+  {
+    "Course Name": "Open Elective"
+  },
+  {
+    "Course Name": "Open Elective"
+  },
+  {
+    "Course Code": "HS 3XX",
+    "Course Name": "HSS Elective"
+  },
+  {
+    "Course Code": "IN 107",
+    "Course Name": "Comprehensive Viva Voce"
+  },
+  {
+    "Course Code": "5th Sem Electrical Engineering"
+  },
+  {
+    "Course Code": "HS 151",
+    "Course Name": "Economics",
+    "Lecture": "C1,C2\n (Jasubhai Auditorium)",
+    "Tutorial": "N1\n (7/204,7/205,7/206,7/207,7/107,7/202,7/203)"
+  },
+  {
+    "Course Code": "BS 192",
+    "Course Name": "Undergraduate Science Laboratory",
+    "Lab": "I1,K1,J1,L1,I2,M1,K2,L2,J2,M2\n (PH Lab)"
+  },
+  {
+    "Course Code": "EE 312",
+    "Course Name": "Engineering Electromagnetics",
+    "Lecture": "D1,D2\n (10/202)",
+    "Tutorial": "H1\n (1/102)"
+  },
+  {
+    "Course Code": "EE 322",
+    "Course Name": "Analog & Mixed Signal Circuits",
+    "Lecture": "B1,B2\n (10/202)",
+    "Lab": "J1\n(EE Lab)"
+  },
+  {
+    "Course Code": "EE 323",
+    "Course Name": "Digital Signal Processing",
+    "Lecture": "E1,E2\n (10/102)",
+    "Tutorial": "A1\n (10/102)"
+  },
+  {
+    "Course Code": "EE 333",
+    "Course Name": "Power Electronics",
+    "Lecture": "F1,F2\n (10/202)",
+    "Lab": "L1,N1,L2,N2\n(EE Lab)"
+  },
+  {
+    "Course Code": "HS XXX",
+    "Course Name": "HSS Elective"
+  },
+  {
+    "Course Name": "Open Project Course"
+  },
+  {
+    "Course Code": "IN 105",
+    "Course Name": "Comprehensive Viva Voce"
+  },
+  {
+    "Course Code": "7th Sem Electrical Engineering"
+  },
+  {
+    "Course Code": "EE 431",
+    "Course Name": "Electrical Systems Laboratory",
+    "Lab": "K2,L2\n(EE Lab)"
+  },
+  {
+    "Course Code": "EE 411",
+    "Course Name": "Digital Signal Processing",
+    "Lecture": "E1,E2\n (10/103)",
+    "Tutorial": "H1\n (10/201)"
+  },
+  {
+    "Course Code": "HS XXX",
+    "Course Name": "HSS Elective (choose from list below)"
+  },
+  {
+    "Course Name": "Open Elective"
+  },
+  {
+    "Course Name": "Open Elective"
+  },
+  {
+    "Course Code": "IN 107",
+    "Course Name": "Comprehensive Viva Voce"
+  },
+  {
+    "Course Code": "5th Sem Mechanical Engineering"
+  },
+  {
+    "Course Code": "HS 151",
+    "Course Name": "Economics",
+    "Lecture": "C1,C2\n (Jasubhai Auditorium)",
+    "Tutorial": "N1\n (7/204,7/205,7/206,7/207,7/107,7/202,7/203)"
+  },
+  {
+    "Course Code": "BS 192",
+    "Course Name": "Undergraduate Science Laboratory",
+    "Lab": "I1,K1,J1,L1,I2,M1,K2,L2,J2,M2\n (PH Lab)"
+  },
+  {
+    "Course Code": "ES 245",
+    "Course Name": "Control Systems",
+    "Lecture": "E1,E2\n (7/104)",
+    "Tutorial": "G1\n (1/101)"
+  },
+  {
+    "Course Code": "ME 333",
+    "Course Name": "Mechanics of Materials",
+    "Lecture": "B1,B2\n (7/208)",
+    "Tutorial": "I2\n(7/104,7/204)",
+    "Lab": "I2\n(ME Lab)"
+  },
+  {
+    "Course Code": "ME 334",
+    "Course Name": "Heat and Mass Transfer",
+    "Lecture": "F1,F2\n (7/108)",
+    "Tutorial": "G2\n (7/209)",
+    "Lab": "M1\n(ME Lab)"
+  },
+  {
+    "Course Code": "ME 3xx",
+    "Course Name": "Manufacturing Systems & Metrology",
+    "Lecture": "D1,D2\n (7/102)",
+    "Lab": "H2\n(7/109)"
+  },
+  {
+    "Course Code": "HS XXX",
+    "Course Name": "HSS Elective"
+  },
+  {
+    "Course Name": "Open Project Course"
+  },
+  {
+    "Course Code": "IN 105",
+    "Course Name": "Comprehensive Viva Voce"
+  },
+  {
+    "Course Code": "7th Sem Mechanical Engineering"
+  },
+  {
+    "Course Code": "ME 461",
+    "Course Name": "Integrated Design and Manufacturing II",
+    "Lecture": "E2\n (7/108)",
+    "Lab": "J1,L1\n(7/102)"
+  },
+  {
+    "Course Code": "HS XXX",
+    "Course Name": "HSS Elective"
+  },
+  {
+    "Course Name": "Basic Science Elective"
+  },
+  {
+    "Course Name": "Open Elective"
+  },
+  {
+    "Course Name": "Open Elective"
+  },
+  {
+    "Course Code": "IN 107",
+    "Course Name": "Comprehensive Viva Voce"
+  },
+  {
+    "Course Code": "5th Sem Materials Engineering"
+  },
+  {
+    "Course Code": "HS 151",
+    "Course Name": "Economics",
+    "Lecture": "C1,C2\n (Jasubhai Auditorium)",
+    "Tutorial": "N1\n (7/204,7/205,7/206,7/207,7/107,7/202,7/203)"
+  },
+  {
+    "Course Code": "BS 192",
+    "Course Name": "Undergraduate Science Laboratory",
+    "Lab": "I1,K1,J1,L1,I2,M1,K2,L2,J2,M2\n (PH Lab)"
+  },
+  {
+    "Course Code": "MSE 307",
+    "Course Name": "Materials Processing",
+    "Lecture": "F1,F2\n (7/107)"
+  },
+  {
+    "Course Code": "MSE 313",
+    "Course Name": "Polymers, Ceramics and Composites",
+    "Lecture": "D1,D2\n (7/208)",
+    "Lab": "I1\n(ME Lab)"
+  },
+  {
+    "Course Code": "HS XXX",
+    "Course Name": "HSS Elective"
+  },
+  {
+    "Course Name": "Open Project Course"
+  },
+  {
+    "Course Code": "IN 105",
+    "Course Name": "Comprehensive Viva Voce"
+  },
+  {
+    "Course Code": "7th Sem Materials Engineering"
+  },
+  {
+    "Course Code": "MSE 402",
+    "Course Name": "Computational Process Design",
+    "Lecture": "E1,E2\n (7/201)",
+    "Tutorial": "H1\n (10/202)"
+  },
+  {
+    "Course Code": "HS XXX",
+    "Course Name": "HSS Elective"
+  },
+  {
+    "Course Name": "Basic Science Elective"
+  },
+  {
+    "Course Name": "Open Elective"
+  },
+  {
+    "Course Name": "Open Elective"
+  },
+  {
+    "Course Code": "IN 107",
+    "Course Name": "Comprehensive Viva Voce"
+  },
+  {
+    "Course Code": "Electives"
+  },
+  {
+    "Course Code": "Orientation Programme: ALL New Postgraduate Students"
+  },
+  {
+    "Course Code": "FP 501",
+    "Course Name": "Aarohan (For 2024 MSc and MA students)"
+  },
+  {
+    "Course Code": "FP 601",
+    "Course Name": "Aarohan (For 2024 MTech, PGDIIT and PhD students)"
+  },
+  {
+    "Course Code": "Additional Courses: Physical Education for Postgraduate Students"
+  },
+  {
+    "Course Code": "PE 500",
+    "Course Name": "Physical Education (For 2024 MSc and MA students)"
+  },
+  {
+    "Course Code": "PE 600",
+    "Course Name": "Physical Education (For 2024 MTech, PGDIIT and PhD students)"
+  },
+  {
+    "Course Code": "Additional courses BE"
+  },
+  {
+    "Course Code": "BE 303",
+    "Course Name": "Bionanotechnology – Principles and Applications",
+    "Lecture": "M1,M2\n (7/205)"
+  },
+  {
+    "Course Code": "BE 401",
+    "Course Name": "Methods in Biology",
+    "Lab": "I1,K1\n(BE Lab)"
+  },
+  {
+    "Course Code": "BE 404",
+    "Course Name": "Genetic Engineering – Principles and Applications",
+    "Lecture": "J1,J2\n (7/210)"
+  },
+  {
+    "Course Code": "BE 607",
+    "Course Name": "Molecular and Cellular Biotechnology",
+    "Lecture": "L1,L2\n (7/210)"
+  },
+  {
+    "Course Code": "BE 613",
+    "Course Name": "Biochemistry",
+    "Lecture": "K1,K2\n (10/102)"
+  },
+  {
+    "Course Code": "BE 614",
+    "Course Name": "Biostatistics",
+    "Lecture": "P1\n (10/102)",
+    "Lab": "J1,L1\n(10/104)"
+  },
+  {
+    "Course Code": "BE 616",
+    "Course Name": "Human Physiology",
+    "Lecture": "I1,I2\n (7/101)"
+  },
+  {
+    "Course Code": "Additional courses CE"
+  },
+  {
+    "Course Code": "CE 601",
+    "Course Name": "Advanced Geotechnical Engineering",
+    "Lecture": "L1,L2\n (7/201)",
+    "Lab": "I2,M1\n(CE Lab)"
+  },
+  {
+    "Course Code": "CE 607",
+    "Course Name": "Advanced Structural Analysis",
+    "Lecture": "N1,N2\n (7/101)"
+  },
+  {
+    "Course Code": "CE 611",
+    "Course Name": "Advanced Engineering Hydrology",
+    "Lecture": "A1,A2\n (7/106)"
+  },
+  {
+    "Course Code": "CE 622",
+    "Course Name": "Structural Dynamics",
+    "Lecture": "M1,M2\n (7/206)"
+  },
+  {
+    "Course Code": "CE 625",
+    "Course Name": "Advanced Hydraulic Engineering",
+    "Lecture": "C1,C2\n (7/110)"
+  },
+  {
+    "Course Code": "CE 627",
+    "Course Name": "Slopes and Retaining Structures",
+    "Lecture": "K1,K2\n (7/201)"
+  },
+  {
+    "Course Code": "CE 637",
+    "Course Name": "Infrasructure Systems: Planning and Management",
+    "Lecture": "J1,J2\n (7/108)"
+  },
+  {
+    "Course Code": "CE 634",
+    "Course Name": "Air Pollution Control Engineering",
+    "Lecture": "P1,P2\n(7/207)"
+  },
+  {
+    "Course Code": "CE 635",
+    "Course Name": "Pavement Materials and Design",
+    "Lecture": "J1,J2\n (7/103)"
+  },
+  {
+    "Course Code": "ES 621",
+    "Course Name": "Advanced Solid Mechanics",
+    "Lecture": "E1,E2\n (7/207)"
+  },
+  {
+    "Course Code": "CE 691-VI",
+    "Course Name": "Special Topics in Civil Engineering: Domestic Wastewater Engineering (Treatment and Reuse)",
+    "Lecture": "F1,F2\n (7/205)"
+  },
+  {
+    "Course Code": "CE 638",
+    "Course Name": "Advanced Concrete Technology",
+    "Lecture": "L1,L2\n (7/103)"
+  },
+  {
+    "Course Code": "Additional courses CL"
+  },
+  {
+    "Course Code": "CL 324",
+    "Course Name": "Introduction to Polymer Science and Engineering",
+    "Lecture": "G1,G2\n (10/202)"
+  },
+  {
+    "Course Code": "CL 426",
+    "Course Name": "Biochemical Engineering",
+    "Lecture": "D1,D2\n (7/105)"
+  },
+  {
+    "Course Code": "CL 427",
+    "Course Name": "Formulation Science and Engineering",
+    "Lecture": "E1,E2\n (7/208)"
+  },
+  {
+    "Course Code": "BS 401",
+    "Course Name": "Nanoscale Science",
+    "Lecture": "F1,F2\n (7/102)"
+  },
+  {
+    "Course Code": "CL 601",
+    "Course Name": "Advance Transport Phenomena",
+    "Lecture": "C1,C2\n (7/207)"
+  },
+  {
+    "Course Code": "CL 602",
+    "Course Name": "Advanced Thermodynamics",
+    "Lecture": "A1,A2\n (7/205)"
+  },
+  {
+    "Course Code": "CL 604",
+    "Course Name": "Advanced Reaction Engineering",
+    "Lecture": "B1,B2\n (7/206)"
+  },
+  {
+    "Course Code": "ES 604",
+    "Course Name": "Engineering Optimization",
+    "Lecture": "I1,I2\n(7/201)"
+  },
+  {
+    "Course Code": "ES 662",
+    "Course Name": "Flexible Electronics: Materials, Methods and Devices",
+    "Lecture": "K1,K2\n(7/208)"
+  },
+  {
+    "Course Code": "Additional courses CSE"
+  },
+  {
+    "Course Code": "ES 335",
+    "Course Name": "Machine Learning",
+    "Lecture": "P1,P2\n(10/103)",
+    "Tutorial": "J1\n(10/103)"
+  },
+  {
+    "Course Code": "CS 431",
+    "Course Name": "Computer and Network Security",
+    "Lecture": "G2,H2\n (1/102)"
+  },
+  {
+    "Course Code": "CS 610",
+    "Course Name": "Algorithms",
+    "Lecture": "E1,E2\n (7/103)"
+  },
+  {
+    "Course Code": "CS 618",
+    "Course Name": "Theoretical Foundations of ML",
+    "Lecture": "P1,P2\n (7/101)"
+  },
+  {
+    "Course Code": "CS 612",
+    "Course Name": "Computer Systems",
+    "Lecture": "L1,L2\n (7/203)"
+  },
+  {
+    "Course Code": "CS 613",
+    "Course Name": "Natural Language Processing",
+    "Lecture": "M1,M2\n (7/208)"
+  },
+  {
+    "Course Code": "CS 691",
+    "Course Name": "Special Topics in CSE: Toolkit for Theoretical Computer Science",
+    "Lecture": "I1,I2\n (7/210)"
+  },
+  {
+    "Course Code": "Additional courses EE"
+  },
+  {
+    "Course Code": "ES 417",
+    "Course Name": "5G and Beyond: An Introduction",
+    "Lecture": "M1,M2\n (7/207)"
+  },
+  {
+    "Course Code": "EE 426",
+    "Course Name": "Electric Vehicle Technology",
+    "Lecture": "M1,M2\n(10/201)"
+  },
+  {
+    "Course Code": "EE 611",
+    "Course Name": "Restructured Power Systems: Operation and Management",
+    "Lecture": "J1,J2\n (7/104)"
+  },
+  {
+    "Course Code": "EE 617",
+    "Course Name": "VLSI Design",
+    "Lecture": "G1,G2 \n(10/201)"
+  },
+  {
+    "Course Code": "EE 639",
+    "Course Name": "Lasers",
+    "Lecture": "L1,L2\n (7/104)"
+  },
+  {
+    "Course Code": "EE 644",
+    "Course Name": "Physics of Transistors",
+    "Lecture": "C1,C2\n (10/102)"
+  },
+  {
+    "Course Code": "EE 648",
+    "Course Name": "Dynamic Behaviour of Electric Machines",
+    "Lecture": "A1,A2\n (7/206)",
+    "Lab": "I1\n(EE Lab)"
+  },
+  {
+    "Course Code": "ES 414",
+    "Course Name": "Introduction to Photonics",
+    "Lecture": "P1,P2\n (7/210)",
+    "Tutorial": "F1\n (7/104)"
+  },
+  {
+    "Course Code": "ES 616",
+    "Course Name": "Digital Control Systems",
+    "Lecture": "C1,C2\n (7/203)",
+    "Tutorial": "G2\n (7/108)"
+  },
+  {
+    "Course Code": "ES 626",
+    "Course Name": "Microfabrication and Semiconductor Processes",
+    "Lecture": "J1,J2\n (7/206)"
+  },
+  {
+    "Course Code": "EE 651",
+    "Course Name": "CMOS Analog IC Design",
+    "Lecture": "A1,A2\n (7/210)"
+  },
+  {
+    "Course Code": "EE 653",
+    "Course Name": "Analog IC Design Lab",
+    "Lab": "K1,I1\n(EE Lab)"
+  },
+  {
+    "Course Code": "EE 656",
+    "Course Name": "Digital VLSI Circuits Laboratory",
+    "Lab": "J2,M2\n(10/104,10/105)"
+  },
+  {
+    "Course Code": "ES 663",
+    "Course Name": "Smart Renewable Energy Systems",
+    "Lecture": "D1,D2\n (7/104)"
+  },
+  {
+    "Course Code": "ES 666",
+    "Course Name": "Computer Vision",
+    "Lecture": "L1,L2\n (10/201)"
+  },
+  {
+    "Course Code": "EE 691-VII",
+    "Course Name": "Special Topics in Electrical Engineering: Economics of Regulation in India",
+    "Lecture": "K1,K2\n (7/210)"
+  },
+  {
+    "Course Code": "Additional courses ME"
+  },
+  {
+    "Course Code": "ES 408",
+    "Course Name": "Mechatronics",
+    "Lecture": "D1,D2\n(7/202)"
+  },
+  {
+    "Course Code": "ME 491(A)",
+    "Course Name": "Special Topics in Mechanical Engineering - Machine Design",
+    "Lecture": "K1,K2\n (7/103)"
+  },
+  {
+    "Course Code": "ES 607",
+    "Course Name": "Foundations of Fluid Dynamics",
+    "Lecture": "E1,E2\n (7/205)",
+    "Tutorial": "G1\n (10/102)"
+  },
+  {
+    "Course Code": "ME 605",
+    "Course Name": "Computational Fluid Dynamics",
+    "Lecture": "P1,P2\n (7/203)",
+    "Tutorial": "N2\n (7/203)"
+  },
+  {
+    "Course Code": "ME 635",
+    "Course Name": "Compressible Flow",
+    "Lecture": "P1,P2\n (7/103)"
+  },
+  {
+    "Course Code": "ME 639",
+    "Course Name": "Introduction to Robotics",
+    "Lecture": "E1,E2\n (7/206)"
+  },
+  {
+    "Course Code": "ME 640",
+    "Course Name": "Fracture Mechanics",
+    "Lecture": "N1,N2\n (7/103)"
+  },
+  {
+    "Course Code": "ES 646",
+    "Course Name": "Elastodynamics and Vibrations",
+    "Lecture": "M1,M2\n (7/107)"
+  },
+  {
+    "Course Code": "ME 691",
+    "Course Name": "Special Topics in Mechanical Engineering - Phase Change Phenomena",
+    "Lecture": "J1,J2\n (7/106)"
+  },
+  {
+    "Course Code": "Additional courses MSE"
+  },
+  {
+    "Course Code": "MSE 304",
+    "Course Name": "Principles of Metal Extraction and Refining",
+    "Lecture": "E1,E2\n (7/110)"
+  },
+  {
+    "Course Code": "MSE 629",
+    "Course Name": "Structure and Defects of Materials",
+    "Lecture": "I1,I2\n (7/202)"
+  },
+  {
+    "Course Code": "MSE 632",
+    "Course Name": "Characterization of Materials",
+    "Lecture": "A1,A2\n (7/203)",
+    "Lab": "J1,L1\n(MSE Lab)"
+  },
+  {
+    "Course Code": "Additional courses CH"
+  },
+  {
+    "Course Code": "CH 202",
+    "Course Name": "Chemistry Laboratory",
+    "Lab": "I1,K1,J1,L1,I2,M1,K2,L2,J2,M2\n (CH Lab)"
+  },
+  {
+    "Course Code": "CH 302",
+    "Course Name": "Electrochemical Science and Engineering",
+    "Lecture": "L1,L2\n (7/105)",
+    "Tutorial": "J2\n (7/110)"
+  },
+  {
+    "Course Code": "CH 401",
+    "Course Name": "Food Chemistry",
+    "Lecture": "J1,J2\n(7/208)",
+    "Tutorial": "M1\n(7/102)"
+  },
+  {
+    "Course Code": "CH 506",
+    "Course Name": "Physical Organic Chemistry",
+    "Lecture": "K1,K2\n (7/104)"
+  },
+  {
+    "Course Code": "CH 508",
+    "Course Name": "Organometallic and Bioinorganic Chemistry",
+    "Lecture": "P1,P2\n (7/104)"
+  },
+  {
+    "Course Code": "CH 510",
+    "Course Name": "Main Group and Transition Metal Chemistry",
+    "Lecture": "A1,A2\n (7/204)"
+  },
+  {
+    "Course Code": "CH 511",
+    "Course Name": "Quantum Chemistry",
+    "Lecture": "P1,P2\n (7/206)"
+  },
+  {
+    "Course Code": "CH 513",
+    "Course Name": "Advanced Organic Chemistry",
+    "Lecture": "G1,G2\n (7/208)"
+  },
+  {
+    "Course Code": "CH 522",
+    "Course Name": "Inorganic Chemistry Laboratory",
+    "Lab": "K1,H1\n(CH Lab)"
+  },
+  {
+    "Course Code": "CH 523",
+    "Course Name": "Organic Chemistry Laboratory",
+    "Lab": "L1,N1\n(CH Lab)"
+  },
+  {
+    "Course Code": "CH 616",
+    "Course Name": "Applied Chemical Biology",
+    "Lecture": "B1,B2\n (7/204)"
+  },
+  {
+    "Course Code": "CH 622",
+    "Course Name": "Interpretative Organic Spectroscopy",
+    "Lecture": "C1,C2\n (7/204)"
+  },
+  {
+    "Course Code": "CH 626",
+    "Course Name": "Asymmetric Synthesis and Catalysis",
+    "Lecture": "C1,C2\n (7/205)"
+  },
+  {
+    "Course Code": "CH 634",
+    "Course Name": "Introduction to Molecular Dynamics",
+    "Lecture": "I1\n (7/104)",
+    "Lab": "L2,N2\n(CH Lab)"
+  },
+  {
+    "Course Code": "CH 635",
+    "Course Name": "Chemical Crystallography",
+    "Lecture": "J1,J2\n (7/201)",
+    "Lab": "N2\n(CH Lab)"
+  },
+  {
+    "Course Code": "CH 636",
+    "Course Name": "Statistical Thermodynamics and its Applications in Chemistry",
+    "Lecture": "L1,L2\n (7/207)"
+  },
+  {
+    "Course Code": "Additional courses MA"
+  },
+  {
+    "Course Code": "MA 501",
+    "Course Name": "Basic Algebra",
+    "Lecture": "C1,C2\n (7/103)",
+    "Tutorial": "G2\n (1/101)"
+  },
+  {
+    "Course Code": "MA 504",
+    "Course Name": "Introduction to Linear Algebra",
+    "Lecture": "B1,B2\n (7/209)",
+    "Tutorial": "M1\n (10/102)"
+  },
+  {
+    "Course Code": "MA 509",
+    "Course Name": "Topics in Real Analysis",
+    "Lecture": "A1,A2\n (7/202)",
+    "Tutorial": "M2\n (7/102)"
+  },
+  {
+    "Course Code": "MA 510",
+    "Course Name": "Topology",
+    "Lecture": "L1,L2\n (7/205)",
+    "Tutorial": "G1\n (7/108)"
+  },
+  {
+    "Course Code": "MA 601",
+    "Course Name": "Applied Linear Algebra, Probability and Statistics",
+    "Lecture": "E1,E2\n (7/109)",
+    "Tutorial": "G1\n (7/209)"
+  },
+  {
+    "Course Code": "MA 605",
+    "Course Name": "Commutative Algebra",
+    "Lecture": "N1,N2\n (7/201)"
+  },
+  {
+    "Course Code": "MA 624",
+    "Course Name": "Partial Differential Equations",
+    "Lecture": "D1,D2\n (7/207)",
+    "Tutorial": "J2\n (7/101)"
+  },
+  {
+    "Course Code": "MA 626",
+    "Course Name": "Functional Analysis",
+    "Lecture": "K1,K2\n(7/209)",
+    "Tutorial": "H2\n(7/108)"
+  },
+  {
+    "Course Code": "MA 627",
+    "Course Name": "Algebraic Topology",
+    "Lecture": "I1,I2\n(7/205)"
+  },
+  {
+    "Course Code": "MA 630",
+    "Course Name": "Probability Theory",
+    "Lecture": "F1,F2\n (7/203)"
+  },
+  {
+    "Course Code": "MA 634",
+    "Course Name": "Algebraic Number Theory",
+    "Lecture": "J1,J2\n (7/109)"
+  },
+  {
+    "Course Code": "MA 638",
+    "Course Name": "Matrix Lie Groups",
+    "Lecture": "P1,P2\n (7/205)"
+  },
+  null,
+  {
+    "Course Code": "Additional courses PH"
+  },
+  {
+    "Course Code": "ES 410",
+    "Course Name": "Introduction to Inverse Modelling in Physical Sciences",
+    "Lecture": "L1,L2\n (7/106)"
+  },
+  {
+    "Course Code": "PH 502",
+    "Course Name": "Mathematical Methods of Physics - I",
+    "Lecture": "E1,E2\n (7/209)",
+    "Tutorial": "H1\n (10/103)"
+  },
+  {
+    "Course Code": "PH 503",
+    "Course Name": "Quantum Mechanics I",
+    "Lecture": "F1,F2\n (7/207)",
+    "Tutorial": "M1\n (7/204)"
+  },
+  {
+    "Course Code": "PH 505",
+    "Course Name": "Classical Electrodynamics",
+    "Lecture": "A1,A2\n (7/107)",
+    "Tutorial": "G2\n (7/202)"
+  },
+  {
+    "Course Code": "PH 508",
+    "Course Name": "Classical Mechanics",
+    "Lecture": "B1,B2\n (7/202)"
+  },
+  {
+    "Course Code": "PH 510",
+    "Course Name": "Condensed Matter Physics",
+    "Lecture": "I1,I2\n (7/207)",
+    "Tutorial": "G1\n (7/203)"
+  },
+  {
+    "Course Code": "PH 605",
+    "Course Name": "Topics in Classical Mechanics and Electrodynamics",
+    "Lecture": "P1,P2\n (7/204)"
+  },
+  {
+    "Course Code": "PH 609",
+    "Course Name": "Introduction to Einstein’s Theory of General Relativity",
+    "Lecture": "N1,N2\n (7/110)",
+    "Tutorial": "M2\n (7/101)"
+  },
+  {
+    "Course Code": "PH 610",
+    "Course Name": "Quantum Field Theory I",
+    "Lecture": "E1,E2\n (7/204)"
+  },
+  {
+    "Course Code": "PH 611",
+    "Course Name": "X-ray Scattering: Concepts and Applications",
+    "Lecture": "I1,I2\n(7/110)"
+  },
+  {
+    "Course Code": "PH 614",
+    "Course Name": "Atomic and Molecular Physics",
+    "Lecture": "D1,D2\n (7/101)"
+  },
+  {
+    "Course Code": "PH 645",
+    "Course Name": "Topics in Soft and Active Matter Physics",
+    "Lecture": "K1,K2\n (7/105)"
+  },
+  {
+    "Course Code": "PH 646",
+    "Course Name": "Advanced Statistical Physics",
+    "Lecture": "C1,C2\n (7/101)"
+  },
+  {
+    "Course Code": "Additional Course EH"
+  },
+  {
+    "Course Code": "EH 601",
+    "Course Name": "Earth Surface Processes in the Anthropocene",
+    "Lecture": "P1,P2\n (7/105)",
+    "Lab": "J1\n(10/102)"
+  },
+  {
+    "Course Code": "EH 605",
+    "Course Name": "Modeling of Earth System and Sustainability",
+    "Lecture": "L1,L2\n (7/206)"
+  },
+  {
+    "Course Code": "EH 608",
+    "Course Name": "Biodiversity Conservation and Sustainable Development.",
+    "Lecture": "M1,M2\n (7/108)"
+  },
+  {
+    "Course Code": "EH 614",
+    "Course Name": "Physics of the Lithosphere",
+    "Lecture": "J1,J2\n (7/204)"
+  },
+  {
+    "Course Code": "EH XXX",
+    "Course Name": "Sequence Stratigraphy",
+    "Lecture": "P2\n(10/102)",
+    "Lab": "J2,M2\n(10/102)"
+  },
+  {
+    "Course Code": "EH xxx",
+    "Course Name": "Geodynamic Modelling Lab",
+    "Lab": "D1,G1,D2,F2\n(10/104)"
+  },
+  {
+    "Course Code": "EH xxx",
+    "Course Name": "Microwave Remote Sensing",
+    "Lecture": "L1,L2\n (7/110)"
+  },
+  {
+    "Course Code": "Additional Courses CG"
+  },
+  {
+    "Course Code": "CG 501",
+    "Course Name": "Computation and Cognition",
+    "Lecture": "C1,C2\n(7/206)"
+  },
+  {
+    "Course Code": "CG 503",
+    "Course Name": "Fundamentals of Cognitive Psychology",
+    "Lecture": "F1,F2\n (10/102)"
+  },
+  {
+    "Course Code": "CG 504",
+    "Course Name": "Research Methods in Cognitive Science",
+    "Lecture": "B1,B2\n (7/106)"
+  },
+  {
+    "Course Code": "CG 505",
+    "Course Name": "Fundamental Neuroscience",
+    "Lecture": "A1,A2\n (7/110)"
+  },
+  {
+    "Course Code": "CG 603",
+    "Course Name": "Perception and Attention",
+    "Lecture": "G1,G2\n (7/109)"
+  },
+  {
+    "Course Code": "CG 606",
+    "Course Name": "Philosophy of Mind",
+    "Lecture": "E1,E2\n (7/202)"
+  },
+  {
+    "Course Code": "CG 612",
+    "Course Name": "Neural Plasticity",
+    "Lecture": "F1,F2\n (7/206)"
+  },
+  {
+    "Course Code": "CG 691-III",
+    "Course Name": "Special Topics in Cognitive Science: Brain Imaging Methods",
+    "Lecture": "D1,D2\n (7/103)"
+  },
+  {
+    "Course Code": "CG xxx",
+    "Course Name": "Special Topics in Cognitive Science: Language and Brain",
+    "Lecture": "M1,M2\n(7/209)"
+  },
+  {
+    "Course Code": "Additional Courses Design, HSS, Management"
+  },
+  {
+    "Course Code": "FP 602",
+    "Course Name": "Writing (PG)",
+    "Lecture": "F1\n (10/103)",
+    "Lab": "D1,D2\n (7/106,7/110,7/201,7/204,7/205,7/206,7/210,7/107)"
+  },
+  {
+    "Course Code": "IN 304",
+    "Course Name": "Ancient Indian Technologies",
+    "Lecture": "N1,N2\n (7/102)"
+  },
+  {
+    "Course Code": "HS 111",
+    "Course Name": "Urdu Script & Poetry",
+    "Lecture": "K1,K2\n (7/106)",
+    "Tutorial": "J1\n (7/101)"
+  },
+  {
+    "Course Code": "HS 112",
+    "Course Name": "Urdu Poetry Interpretation",
+    "Lecture": "P1,P2\n (7/110)",
+    "Tutorial": "G1\n (1/102)"
+  },
+  {
+    "Course Code": "HS 191-I",
+    "Course Name": "Special Topics in HSS: Mandarin for Beginners",
+    "Lecture": "N1,N2\n(7/210)"
+  },
+  {
+    "Course Code": "HS 191-II",
+    "Course Name": "Special Topics in HSS: Basic Mandarin Conversation (Listening and Speaking)",
+    "Lecture": "L1,L2\n(10/102)"
+  },
+  {
+    "Course Code": "MS 408",
+    "Course Name": "Financial Considerations in Engineering Decisions",
+    "Lecture": "P1,P2\n(7/208)"
+  },
+  {
+    "Course Code": "HS 425",
+    "Course Name": "Introduction to Archaeology",
+    "Lecture": "I1,I2\n (10/102)"
+  },
+  {
+    "Course Code": "IN 491",
+    "Course Name": "Special Topics: Foundations of User Experience",
+    "Lecture": "N1,N2\n (7/105)"
+  },
+  {
+    "Course Code": "HS 510",
+    "Course Name": "Perspectives of Indian Civilisation",
+    "Lecture": "E1,E2\n (1/102)"
+  },
+  {
+    "Course Code": "HS 517 ",
+    "Course Name": "Literary Experiment in European Modernism",
+    "Lecture": "I1,I2\n(7/102)"
+  },
+  {
+    "Course Code": "HS 520",
+    "Course Name": "Ancient Indian Architecture",
+    "Lecture": "M1,M2\n (7/202)"
+  },
+  {
+    "Course Code": "HS 524",
+    "Course Name": "Qualitative Research Methods",
+    "Lecture": "C1,C2\n (5/202)"
+  },
+  {
+    "Course Code": "HS 591-VI",
+    "Course Name": "Special Topics in HSS: Introduction to the Learning Sciences",
+    "Lecture": "J1,J2\n (7/205)"
+  },
+  {
+    "Course Code": "DES 601",
+    "Course Name": "Visual Design for Academia",
+    "Lecture": "L1\n (7/101)",
+    "Lab": "K2,L2\n(7/202)"
+  },
+  {
+    "Course Code": "HS 610",
+    "Course Name": "Critical Journey through Select Thoughts and Theories",
+    "Lecture": "K1,K2\n (7/110)"
+  },
+  {
+    "Course Code": "HS 633",
+    "Course Name": "Scarred Nations : Partition in the Indian subcontinent",
+    "Lecture": "J1,J2\n (7/105)"
+  },
+  {
+    "Course Code": "HS 649",
+    "Course Name": "Public Policy and its Impact Evaluation",
+    "Lecture": "M1,M2\n (7/109)",
+    "Tutorial": "J1\n (10/204)"
+  },
+  {
+    "Course Code": "HS 651",
+    "Course Name": "Critical Perspectives in Sociology",
+    "Lecture": "B1,B2\n (1/101)"
+  },
+  {
+    "Course Code": "HS 652",
+    "Course Name": "Reading Philosophy: Classical, Contemporary and Global Perspectives",
+    "Lecture": "A1,A2\n (7/105)"
+  },
+  {
+    "Course Code": "HS 654",
+    "Course Name": "Mixed Methods in Research",
+    "Lecture": "N1,N1\n (7/106)"
+  },
+  {
+    "Course Code": "DES 691",
+    "Course Name": "Special Topics in Design: Design for Discretive Needs",
+    "Lecture": "P1,P2\n (7/201)"
+  },
+  {
+    "Course Code": "HS 491-XI",
+    "Course Name": "Special Topics in HSS: Understanding and Designing Comics and Graphic Novels",
+    "Lecture": "M1,M2\n(1/102)"
+  },
+  {
+    "Course Code": "HS xxx",
+    "Course Name": "Academic Communication: Argumentation and Reasoning (Half-semester)",
+    "Lecture": "P1,P2\n (7/102)"
+  },
+  {
+    "Course Code": "HS xxx",
+    "Course Name": "Semiotic Anthropology (Special Topics)",
+    "Lecture": "M1,M2\n (7/203)"
+  }
+]
