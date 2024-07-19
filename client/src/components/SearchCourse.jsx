@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { TextField } from "@mui/material";
 import TrieSearch from "trie-search";
-import timetableWithRedundant from "../timetable_data.json";
 import DisplayCourses from "./DisplayCourse";
 import PropTypes from "prop-types";
 
@@ -36,16 +35,30 @@ const removeRedundant = (timetableWithRedundant) => {
   });
 };
 
-// Cleaned and processed timetable
-const timetable = removeRedundant(timetableWithRedundant);
-
 export default function SearchCourse({ addToSelected, selectedCourses }) {
   const [courseNameOrID, setCourseNameOrID] = useState("");
   const [searchResults, setSearchResults] = useState([]);
+  const [timetable, setTimetable] = useState([]);
+
+  // Fetch the timetable data from the server when the component mounts
+  useEffect(() => {
+    const getTimetableData = async () => {
+      try {
+        const response = await fetch("/api/timetable");
+        const data = await response.json();
+        const cleanedData = removeRedundant(data);
+        setTimetable(cleanedData);
+      } catch (error) {
+        console.error("Error fetching timetable data:", error);
+      }
+    };
+
+    getTimetableData();
+  }, []);
 
   // Parse the timetable data and build a Trie data structure
   useEffect(() => {
-    const trie = new TrieSearch("Course Code");
+    const trie = new TrieSearch("courseCode");
     trie.addAll(timetable);
     if (courseNameOrID.trim() !== "") {
       const results = trie.get(courseNameOrID);
@@ -55,7 +68,7 @@ export default function SearchCourse({ addToSelected, selectedCourses }) {
     } else {
       setSearchResults([]);
     }
-  }, [courseNameOrID, selectedCourses]);
+  }, [courseNameOrID, selectedCourses, timetable]);
 
   return (
     <div>
