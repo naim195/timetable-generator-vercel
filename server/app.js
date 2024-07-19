@@ -1,12 +1,20 @@
 const express = require("express");
+const cors = require("cors");
 const { GoogleSpreadsheet } = require("google-spreadsheet");
-const {JWT} = require("jsonwebtoken");
+const jwt = require("jsonwebtoken");
+require('dotenv').config(); 
+
 const app = express();
 const port = 3000;
 
+app.use(cors({
+    origin: "https://timetable-generator-khaki.vercel.app",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+}));
+
 app.get("/api/timetable", async (req, res) => {
   try {
-    const serviceAccountAuth = new JWT({
+    const serviceAccountAuth = new jwt.JWT({
       email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
       key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n"), // Replace escaped newlines
       scopes: ["https://www.googleapis.com/auth/spreadsheets"],
@@ -37,5 +45,5 @@ app.get("/api/timetable", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  console.log(`Server running at port: ${port}`);
 });

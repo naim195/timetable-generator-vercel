@@ -44,7 +44,7 @@ export default function SearchCourse({ addToSelected, selectedCourses }) {
   useEffect(() => {
     const getTimetableData = async () => {
       try {
-        const response = await fetch("/api/timetable");
+        const response = await fetch("https://timetable-generator-api.vercel.app/api/timetable");
         const data = await response.json();
         const cleanedData = removeRedundant(data);
         setTimetable(cleanedData);
