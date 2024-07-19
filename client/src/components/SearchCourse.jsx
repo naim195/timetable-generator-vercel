@@ -44,7 +44,9 @@ export default function SearchCourse({ addToSelected, selectedCourses }) {
   useEffect(() => {
     const getTimetableData = async () => {
       try {
-        const response = await fetch("https://timetable-generator-api.vercel.app/api");
+        const response = await fetch(
+          "https://timetable-generator-api.vercel.app/api",
+        );
         const data = await response.json();
         const cleanedData = removeRedundant(data);
         setTimetable(cleanedData);
@@ -58,7 +60,7 @@ export default function SearchCourse({ addToSelected, selectedCourses }) {
 
   // Parse the timetable data and build a Trie data structure
   useEffect(() => {
-    const trie = new TrieSearch("courseCode");
+    const trie = new TrieSearch("Course Code");
     trie.addAll(timetable);
     if (courseNameOrID.trim() !== "") {
       const results = trie.get(courseNameOrID);
