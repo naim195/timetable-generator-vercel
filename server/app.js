@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const { GoogleSpreadsheet } = require("google-spreadsheet");
-const {JWT} = require("jsonwebtoken");
+import { JWT } from 'google-auth-library';
 require('dotenv').config(); 
 
 const app = express();
