@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const { GoogleSpreadsheet } = require("google-spreadsheet");
-const jwt = require("jsonwebtoken");
+const {JWT} = require("jsonwebtoken");
 require('dotenv').config(); 
 
 const app = express();
@@ -12,9 +12,9 @@ app.use(cors({
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
 }));
 
-app.get("/api/timetable", async (req, res) => {
+app.get("/api", async (req, res) => {
   try {
-    const serviceAccountAuth = new jwt.JWT({
+    const serviceAccountAuth = new JWT({
       email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
       key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n"), // Replace escaped newlines
       scopes: ["https://www.googleapis.com/auth/spreadsheets"],
@@ -39,6 +39,7 @@ app.get("/api/timetable", async (req, res) => {
 
     res.json(timetableData);
   } catch (error) {
+      console.log('error fetching data');
     console.error("Error fetching timetable data:", error);
     res.status(500).json({ error: "Failed to fetch timetable data" });
   }
