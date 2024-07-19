@@ -36,7 +36,7 @@ function App() {
         <p>
           View the source code for this project on{" "}
           <a
-            href="https://github.com/naim195/timetable-generator"
+            href="https://github.com/naim195/timetable-generator-vercel"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: "blue" }}
