@@ -20,29 +20,34 @@ const Timetable = ({ selectedCourses }) => {
   const clashingCourses = new Set();
   let notAdded = new Set();
 
+  // Function to add courses to the slot
+  const addCourseToSlot = (course, slot, type = "") => {
+    slot = slot.trim();
+    const courseIdentifier = `${course["Course Code"]}${type}`;
+
+    if (slotToCourse[slot]) {
+      // Check if the clashing course is not the same as the current one
+      if (slotToCourse[slot] !== courseIdentifier) {
+        clashingCourses.add(courseIdentifier);
+        clashingCourses.add(slotToCourse[slot]);
+      }
+    } else {
+      slotToCourse[slot] = courseIdentifier;
+    }
+  };
+
+  // Iterate over each selected course and add them to the slot
   selectedCourses.forEach((course) => {
     if (course.Lecture && course.Lecture.length > 0) {
       course.Lecture.forEach((slot) => {
-        slot = slot.trim();
-        if (slotToCourse[slot]) {
-          clashingCourses.add(course["Course Code"]);
-          clashingCourses.add(slotToCourse[slot]);
-        } else {
-          slotToCourse[slot] = course["Course Code"];
-        }
+        addCourseToSlot(course, slot);
       });
     }
 
     if (course.Tutorial && course.Tutorial.length > 0) {
       if (course.Tutorial.length <= 2) {
         course.Tutorial.forEach((slot) => {
-          slot = slot.trim();
-          if (slotToCourse[slot]) {
-            clashingCourses.add(course["Course Code"]);
-            clashingCourses.add(slotToCourse[slot]);
-          } else {
-            slotToCourse[slot] = `${course["Course Code"]}(T)`;
-          }
+          addCourseToSlot(course, slot, "(T)");
         });
       } else {
         notAdded.add(course["Course Code"]);
@@ -52,13 +57,7 @@ const Timetable = ({ selectedCourses }) => {
     if (course.Lab && course.Lab.length > 0) {
       if (course.Lab.length <= 2) {
         course.Lab.forEach((slot) => {
-          slot = slot.trim();
-          if (slotToCourse[slot]) {
-            clashingCourses.add(course["Course Code"]);
-            clashingCourses.add(slotToCourse[slot]);
-          } else {
-            slotToCourse[slot] = `${course["Course Code"]}(Lab)`;
-          }
+          addCourseToSlot(course, slot, "(Lab)");
         });
       } else {
         notAdded.add(course["Course Code"]);
