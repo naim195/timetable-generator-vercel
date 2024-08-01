@@ -6,7 +6,6 @@ import {
   TableRow,
   TableCell,
   Button,
-  Tooltip,
   Alert,
   Box,
 } from "@mui/material";
@@ -95,7 +94,7 @@ const Timetable = ({ selectedCourses }) => {
 
     navigator.clipboard.writeText(tableContent).then(() => {
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      setTimeout(() => setCopied(false), 5000);
     });
   };
 
@@ -167,27 +166,30 @@ const Timetable = ({ selectedCourses }) => {
         </TableBody>
       </Table>
       <div className="btn-container">
-        <Tooltip
-          title="Paste this in Google Sheets to modify it."
-          sx={{ fontSize: "0.9rem" }}
-        >
+        <Box display="flex" flexDirection="column" alignItems="center">
           <Button
             variant="contained"
             onClick={copyToClipboard}
             className="copy"
           >
             {copied ? "Copied!" : "Copy to Clipboard"}
-          </Button>
-        </Tooltip>
+          </Button>          
+          <Box textAlign="center">
+            <p>Paste this in Google Sheets to modify it.</p>
+          </Box>
+        </Box>
 
-        <Button
-          sx={{ fontSize: "0.9rem" }}
-          variant="contained"
-          onClick={captureScreenshot}
-          className="screenshot"
-        >
-          Take Screenshot
-        </Button>
+        <Box display="flex" flexDirection="column" alignItems="center" gap={1}>
+          <Button
+            sx={{ fontSize: "0.9rem" }}
+            variant="contained"
+            onClick={captureScreenshot}
+            className="screenshot"
+          >
+            Take Screenshot
+          </Button>
+          <Box>Click to download timetable as image</Box>
+        </Box>
       </div>
     </div>
   );
