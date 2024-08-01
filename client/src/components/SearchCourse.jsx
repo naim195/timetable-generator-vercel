@@ -24,11 +24,14 @@ const removeRedundant = (timetableWithRedundant) => {
       seenCourseCodes.add(course["Course Code"]);
     }
     for (let prop in course) {
-      if (typeof course[prop] === "string" && course[prop].includes("\n")) {
-        course[prop] = course[prop].split("\n")[0];
-      }
       if (prop === "Lecture" || prop === "Tutorial" || prop === "Lab") {
-        course[prop] = course[prop].split("\n")[0].split(",");
+        if (typeof course[prop] === "string") {
+          course[prop] = course[prop].split(",").map(slot => slot.replace(/\n.*$/, '').trim());
+        } else if (Array.isArray(course[prop])) {
+          course[prop] = course[prop].map(slot => slot.replace(/\n.*$/, '').trim());
+        } else {
+          course[prop] = [];
+        }
       }
     }
     return true;
@@ -45,10 +48,12 @@ export default function SearchCourse({ addToSelected, selectedCourses }) {
     const getTimetableData = async () => {
       try {
         const response = await fetch(
-          "https://timetable-generator-api.vercel.app/api",
+          "https://timetable-generator-api.vercel.app/api"
         );
         const data = await response.json();
+        console.log("Raw data from API:", data); // Log raw data
         const cleanedData = removeRedundant(data);
+        console.log("Cleaned data:", cleanedData); // Log cleaned data
         setTimetable(cleanedData);
       } catch (error) {
         console.error("Error fetching timetable data:", error);
@@ -60,12 +65,12 @@ export default function SearchCourse({ addToSelected, selectedCourses }) {
 
   // Parse the timetable data and build a Trie data structure
   useEffect(() => {
-    const trie = new TrieSearch("Course Code");
+    const trie = new TrieSearch(['Course Code', 'Course Name']); // Adding both fields to search on
     trie.addAll(timetable);
     if (courseNameOrID.trim() !== "") {
       const results = trie.get(courseNameOrID);
       setSearchResults(
-        results.filter((course) => !selectedCourses.includes(course)) || [],
+        results.filter((course) => !selectedCourses.some(selectedCourse => selectedCourse["Course Code"] === course["Course Code"])) || []
       );
     } else {
       setSearchResults([]);

@@ -11,20 +11,38 @@ app.use(
   cors({
     origin: "https://timetable-generator-khaki.vercel.app",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  }),
+  })
 );
+
+// Helper function to clean and normalize slot strings
+const cleanSlot = (slot) => {
+  if (!slot) return [];
+  return slot.split(',')
+    .map(s => s.replace(/\n.*$/, '').trim()) // Remove text after newlines and trim
+    .filter(s => s.length > 0 && /^[A-Z]\d+$/.test(s)); // Filter valid slots like "D1", "D2"
+};
+
+const preprocessData = (data) => {
+  return data.map(course => ({
+    "Course Code": course["Course Code"],
+    "Course Name": course["Course Name"],
+    Lecture: cleanSlot(course.Lecture),
+    Tutorial: cleanSlot(course.Tutorial),
+    Lab: cleanSlot(course.Lab)
+  }));
+};
 
 app.get("/api", async (req, res) => {
   try {
     const serviceAccountAuth = new JWT({
       email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-      key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n"), // Replace escaped newlines
+      key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n"),
       scopes: ["https://www.googleapis.com/auth/spreadsheets"],
     });
 
     const doc = new GoogleSpreadsheet(
       process.env.GOOGLE_SHEET_ID,
-      serviceAccountAuth,
+      serviceAccountAuth
     );
 
     await doc.loadInfo();
@@ -39,7 +57,8 @@ app.get("/api", async (req, res) => {
       Tutorial: row.get("Tutorial"),
     }));
 
-    res.json(timetableData);
+    const processedData = preprocessData(timetableData);
+    res.json(processedData);
   } catch (error) {
     console.log("error fetching data");
     console.error("Error fetching timetable data:", error);
