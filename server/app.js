@@ -1,36 +1,47 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const { GoogleSpreadsheet } = require("google-spreadsheet");
-import { JWT } from "google-auth-library";
-require("dotenv").config();
+const { JWT } = require("google-auth-library");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const app = express();
 const port = 3000;
 
-app.use(
-  cors({
-    origin: "https://timetable-generator-khaki.vercel.app",
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  })
-);
+app.use(cors());
+app.use(express.json()); // To parse JSON body
 
-// Helper function to clean and normalize slot strings
+let sheetId = process.env.GOOGLE_SHEET_ID || "";
+
 const cleanSlot = (slot) => {
   if (!slot) return [];
-  return slot.split(',')
-    .map(s => s.replace(/\n.*$/, '').trim()) // Remove text after newlines and trim
-    .filter(s => s.length > 0 && /^[A-Z]\d+$/.test(s)); // Filter valid slots like "D1", "D2"
+  return slot
+    .split(",")
+    .map((s) => s.replace(/\n.*$/, "").trim()) // Remove text after newlines and trim
+    .filter((s) => s.length > 0 && /^[A-Z]\d+$/.test(s)); // Filter valid slots like "D1", "D2"
 };
 
 const preprocessData = (data) => {
-  return data.map(course => ({
+  return data.map((course) => ({
     "Course Code": course["Course Code"],
     "Course Name": course["Course Name"],
     Lecture: cleanSlot(course.Lecture),
     Tutorial: cleanSlot(course.Tutorial),
-    Lab: cleanSlot(course.Lab)
+    Lab: cleanSlot(course.Lab),
   }));
 };
+
+app.post("/update-sheet-id", (req, res) => {
+  const { id } = req.body;
+  if (id) {
+    sheetId = id;
+
+    return res.status(200).json({ message: "Sheet ID updated successfully." });
+  }
+  return res.status(400).json({ error: "Sheet ID is required." });
+});
 
 app.get("/api", async (req, res) => {
   try {
@@ -40,10 +51,7 @@ app.get("/api", async (req, res) => {
       scopes: ["https://www.googleapis.com/auth/spreadsheets"],
     });
 
-    const doc = new GoogleSpreadsheet(
-      process.env.GOOGLE_SHEET_ID,
-      serviceAccountAuth
-    );
+    const doc = new GoogleSpreadsheet(sheetId, serviceAccountAuth);
 
     await doc.loadInfo();
     const sheet = doc.sheetsByTitle["Time table"];
@@ -60,10 +68,13 @@ app.get("/api", async (req, res) => {
     const processedData = preprocessData(timetableData);
     res.json(processedData);
   } catch (error) {
-    console.log("error fetching data");
     console.error("Error fetching timetable data:", error);
     res.status(500).json({ error: "Failed to fetch timetable data" });
   }
+});
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 app.listen(port, () => {

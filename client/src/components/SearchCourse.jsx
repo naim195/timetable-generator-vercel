@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import { TextField } from "@mui/material";
-import TrieSearch from "trie-search";
-import DisplayCourses from "./DisplayCourse";
+import { TextField, Autocomplete } from "@mui/material";
 import PropTypes from "prop-types";
 
 // Function to remove redundant courses and process the timetable
@@ -44,7 +42,6 @@ const removeRedundant = (timetableWithRedundant) => {
 
 export default function SearchCourse({ addToSelected, selectedCourses }) {
   const [courseNameOrID, setCourseNameOrID] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
   const [timetable, setTimetable] = useState([]);
 
   // Fetch the timetable data from the server when the component mounts
@@ -54,7 +51,9 @@ export default function SearchCourse({ addToSelected, selectedCourses }) {
         const response = await fetch(
           "https://timetable-generator-api.vercel.app/api",
         );
+
         const data = await response.json();
+
         const cleanedData = removeRedundant(data);
         setTimetable(cleanedData);
       } catch (error) {
@@ -65,37 +64,49 @@ export default function SearchCourse({ addToSelected, selectedCourses }) {
     getTimetableData();
   }, []);
 
-  // Parse the timetable data and build a Trie data structure
-  useEffect(() => {
-    const trie = new TrieSearch(["Course Code", "Course Name"]); // Adding both fields to search on
-    trie.addAll(timetable);
-    if (courseNameOrID.trim() !== "") {
-      const results = trie.get(courseNameOrID);
-      setSearchResults(
-        results.filter(
-          (course) =>
-            !selectedCourses.some(
-              (selectedCourse) =>
-                selectedCourse["Course Code"] === course["Course Code"],
-            ),
-        ) || [],
-      );
-    } else {
-      setSearchResults([]);
-    }
-  }, [courseNameOrID, selectedCourses, timetable]);
+  // Handle course filtering based on input
+  const filteredCourses = timetable.filter(
+    (course) =>
+      courseNameOrID.trim() === "" ||
+      course["Course Code"]
+        .toUpperCase()
+        .includes(courseNameOrID.toUpperCase()) ||
+      course["Course Name"]
+        .toUpperCase()
+        .includes(courseNameOrID.toUpperCase()),
+  );
+
+  const availableOptions = filteredCourses.filter(
+    (course) =>
+      !selectedCourses.some(
+        (selectedCourse) =>
+          selectedCourse["Course Code"] === course["Course Code"],
+      ),
+  );
 
   return (
     <div>
-      <TextField
-        id="search"
-        label="Enter Course ID"
-        variant="filled"
-        onChange={(e) => setCourseNameOrID(e.target.value.toUpperCase())}
+      <Autocomplete
+        freeSolo
+        options={availableOptions}
+        getOptionLabel={(option) =>
+          `${option["Course Code"]} - ${option["Course Name"]}`
+        }
+        renderInput={(params) => (
+          <TextField
+            {...params}
+            label="Enter Course ID or Name"
+            variant="filled"
+          />
+        )}
+        onChange={(event, newValue) => {
+          if (newValue) {
+            addToSelected(newValue);
+            setCourseNameOrID(""); // Clear the input after selection
+          }
+        }}
+        disableCloseOnSelect
       />
-      {courseNameOrID.length > 0 && (
-        <DisplayCourses courses={searchResults} addToSelected={addToSelected} />
-      )}
     </div>
   );
 }

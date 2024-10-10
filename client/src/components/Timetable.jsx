@@ -173,7 +173,7 @@ const Timetable = ({ selectedCourses }) => {
             className="copy"
           >
             {copied ? "Copied!" : "Copy to Clipboard"}
-          </Button>          
+          </Button>
           <Box textAlign="center">
             <p>Paste this in Google Sheets to modify it.</p>
           </Box>
