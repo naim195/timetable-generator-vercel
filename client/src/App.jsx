@@ -44,6 +44,9 @@ function App() {
             GitHub
           </a>
         </p>
+        <p>
+          Made with <span style={{ color: "red" }}>❤️</span> by Naimkhan Shaikh
+        </p>
       </footer>
     </div>
   );

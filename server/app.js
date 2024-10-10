@@ -11,7 +11,7 @@ const app = express();
 const port = 3000;
 
 app.use(cors());
-app.use(express.json()); // To parse JSON body
+app.use(express.json());
 
 let sheetId = process.env.GOOGLE_SHEET_ID || "";
 

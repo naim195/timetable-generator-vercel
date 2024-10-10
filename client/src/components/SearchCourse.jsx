@@ -55,6 +55,7 @@ export default function SearchCourse({ addToSelected, selectedCourses }) {
         const data = await response.json();
 
         const cleanedData = removeRedundant(data);
+
         setTimetable(cleanedData);
       } catch (error) {
         console.error("Error fetching timetable data:", error);
