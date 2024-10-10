@@ -18,7 +18,7 @@ let sheetId = process.env.GOOGLE_SHEET_ID || "";
 const cleanSlot = (slot) => {
   if (!slot) return [];
   return slot
-    .split(",")
+    .split(/[\s,]+/)
     .map((s) => s.replace(/\n.*$/, "").trim()) // Remove text after newlines and trim
     .filter((s) => s.length > 0 && /^[A-Z]\d+$/.test(s)); // Filter valid slots like "D1", "D2"
 };
