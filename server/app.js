@@ -25,7 +25,7 @@ const cleanSlot = (slot) => {
 
 const preprocessData = (data) => {
   return data.map((course) => ({
-    "Course Code": course["Course Code"],
+    "Course Number": course["Course Number"],
     "Course Name": course["Course Name"],
     Lecture: cleanSlot(course.Lecture),
     Tutorial: cleanSlot(course.Tutorial),
@@ -37,7 +37,6 @@ app.post("/update-sheet-id", (req, res) => {
   const { id } = req.body;
   if (id) {
     sheetId = id;
-
     return res.status(200).json({ message: "Sheet ID updated successfully." });
   }
   return res.status(400).json({ error: "Sheet ID is required." });
@@ -58,7 +57,7 @@ app.get("/api", async (req, res) => {
     const rows = await sheet.getRows();
 
     const timetableData = rows.map((row) => ({
-      "Course Code": row.get("Course Code"),
+      "Course Number": row.get("Course Number"),
       "Course Name": row.get("Course Name"),
       Lecture: row.get("Lecture"),
       Lab: row.get("Lab"),
@@ -66,6 +65,7 @@ app.get("/api", async (req, res) => {
     }));
 
     const processedData = preprocessData(timetableData);
+    console.log(preprocessData);
     res.json(processedData);
   } catch (error) {
     console.error("Error fetching timetable data:", error);

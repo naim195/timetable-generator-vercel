@@ -6,20 +6,21 @@ import PropTypes from "prop-types";
 const removeRedundant = (timetableWithRedundant) => {
   const seenCourseCodes = new Set();
   return timetableWithRedundant.filter((course) => {
+    
     if (
       !course ||
       !(
-        Object.hasOwn(course, "Course Code") &&
+        Object.hasOwn(course, "Course Number") &&
         Object.hasOwn(course, "Course Name")
       ) ||
-      course["Course Code"].includes("XX")
+      course["Course Number"].includes("XX")
     ) {
       return false;
     }
-    if (seenCourseCodes.has(course["Course Code"])) {
+    if (seenCourseCodes.has(course["Course Number"])) {
       return false;
     } else {
-      seenCourseCodes.add(course["Course Code"]);
+      seenCourseCodes.add(course["Course Number"]);
     }
     for (let prop in course) {
       if (prop === "Lecture" || prop === "Tutorial" || prop === "Lab") {
@@ -29,7 +30,7 @@ const removeRedundant = (timetableWithRedundant) => {
             .map((slot) => slot.replace(/\n.*$/, "").trim());
         } else if (Array.isArray(course[prop])) {
           course[prop] = course[prop].map((slot) =>
-            slot.replace(/\n.*$/, "").trim(),
+            slot.trim(),
           );
         } else {
           course[prop] = [];
@@ -57,6 +58,7 @@ export default function SearchCourse({ addToSelected, selectedCourses }) {
         const cleanedData = removeRedundant(data);
 
         setTimetable(cleanedData);
+        
       } catch (error) {
         console.error("Error fetching timetable data:", error);
       }
@@ -69,7 +71,7 @@ export default function SearchCourse({ addToSelected, selectedCourses }) {
   const filteredCourses = timetable.filter(
     (course) =>
       courseNameOrID.trim() === "" ||
-      course["Course Code"]
+      course["Course Number"]
         .toUpperCase()
         .includes(courseNameOrID.toUpperCase()) ||
       course["Course Name"]
@@ -81,7 +83,7 @@ export default function SearchCourse({ addToSelected, selectedCourses }) {
     (course) =>
       !selectedCourses.some(
         (selectedCourse) =>
-          selectedCourse["Course Code"] === course["Course Code"],
+          selectedCourse["Course Number"] === course["Course Number"],
       ),
   );
 
@@ -91,7 +93,7 @@ export default function SearchCourse({ addToSelected, selectedCourses }) {
         freeSolo
         options={availableOptions}
         getOptionLabel={(option) =>
-          `${option["Course Code"]} - ${option["Course Name"]}`
+          `${option["Course Number"]} - ${option["Course Name"]}`
         }
         renderInput={(params) => (
           <TextField

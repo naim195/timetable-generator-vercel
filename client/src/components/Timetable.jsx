@@ -24,10 +24,10 @@ const Timetable = ({ selectedCourses }) => {
       course.Lecture.forEach((slot) => {
         slot = slot.trim();
         if (slotToCourse[slot]) {
-          clashingCourses.add(course["Course Code"]);
+          clashingCourses.add(course["Course Number"]);
           clashingCourses.add(slotToCourse[slot]);
         } else {
-          slotToCourse[slot] = course["Course Code"];
+          slotToCourse[slot] = course["Course Number"];
         }
       });
     }
@@ -37,14 +37,14 @@ const Timetable = ({ selectedCourses }) => {
         course.Tutorial.forEach((slot) => {
           slot = slot.trim();
           if (slotToCourse[slot]) {
-            clashingCourses.add(course["Course Code"]);
+            clashingCourses.add(course["Course Number"]);
             clashingCourses.add(slotToCourse[slot]);
           } else {
-            slotToCourse[slot] = `${course["Course Code"]}(T)`;
+            slotToCourse[slot] = `${course["Course Number"]}(T)`;
           }
         });
       } else {
-        notAdded.add(course["Course Code"]);
+        notAdded.add(course["Course Number"]);
       }
     }
 
@@ -53,14 +53,14 @@ const Timetable = ({ selectedCourses }) => {
         course.Lab.forEach((slot) => {
           slot = slot.trim();
           if (slotToCourse[slot]) {
-            clashingCourses.add(course["Course Code"]);
+            clashingCourses.add(course["Course Number"]);
             clashingCourses.add(slotToCourse[slot]);
           } else {
-            slotToCourse[slot] = `${course["Course Code"]}(Lab)`;
+            slotToCourse[slot] = `${course["Course Number"]}(Lab)`;
           }
         });
       } else {
-        notAdded.add(course["Course Code"]);
+        notAdded.add(course["Course Number"]);
       }
     }
   });
@@ -198,7 +198,7 @@ const Timetable = ({ selectedCourses }) => {
 Timetable.propTypes = {
   selectedCourses: PropTypes.arrayOf(
     PropTypes.shape({
-      "Course Code": PropTypes.string.isRequired,
+      "Course Number": PropTypes.string.isRequired,
       "Course Name": PropTypes.string.isRequired,
       Lecture: PropTypes.arrayOf(PropTypes.string),
       Tutorial: PropTypes.arrayOf(PropTypes.string),

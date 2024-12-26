@@ -21,7 +21,7 @@ const Selected = ({
         {selectedCourses.map((course, index) => (
           <ListItem key={index} dense>
             <ListItemText
-              primary={`${course["Course Code"]}: ${course["Course Name"]}`}
+              primary={`${course["Course Number"]}: ${course["Course Name"]}`}
             />
             <DeleteIcon onClick={() => handleDelete(course)} />
           </ListItem>
@@ -42,7 +42,7 @@ const Selected = ({
 Selected.propTypes = {
   selectedCourses: PropTypes.arrayOf(
     PropTypes.shape({
-      "Course Code": PropTypes.string.isRequired,
+      "Course Number": PropTypes.string.isRequired,
       "Course Name": PropTypes.string.isRequired,
     }),
   ).isRequired,

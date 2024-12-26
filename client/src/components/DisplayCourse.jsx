@@ -6,9 +6,9 @@ const DisplayCourses = ({ courses, addToSelected }) => {
   return (
     <div className="coursesContainer">
       {courses.map((course) => (
-        <div key={course["Course Code"]}>
+        <div key={course["Course Number"]}>
           <Button variant="text" onClick={() => addToSelected(course)}>
-            {course["Course Code"]}: {course["Course Name"]}
+            {course["Course Number"]}: {course["Course Name"]}
           </Button>
         </div>
       ))}
@@ -19,7 +19,7 @@ const DisplayCourses = ({ courses, addToSelected }) => {
 DisplayCourses.propTypes = {
   courses: PropTypes.arrayOf(
     PropTypes.shape({
-      "Course Code": PropTypes.string.isRequired,
+      "Course Number": PropTypes.string.isRequired,
       "Course Name": PropTypes.string.isRequired,
     }),
   ).isRequired,
